@@ -14,6 +14,9 @@ body {
   .header {
     @apply bg-light fixed w-full z-50;
   }
+  .header .container {
+    @apply relative;
+  }
   .header .branding {
     @apply flex items-center justify-between;
   }
@@ -69,6 +72,9 @@ body {
   .header__nav .nav li {
     @apply w-[8rem] py-2 md:w-fit md:p-2;
   }
+  .header__nav .nav li.open {
+    @apply bg-primary text-light;
+  }
   .header__nav .nav li:hover {
     @apply bg-primary rounded-sm;
   }
@@ -87,10 +93,47 @@ body {
   .header__nav ul li:hover a {
     @apply text-primary;
   }
-
+  /* --------------------------HEADER SUBMENU---------------------------- */
+  .header__sub {
+    @apply hidden opacity-0 bg-light absolute top-[10rem] left-0 md:!w-full p-5;
+  }
+  .header__sub.open {
+    @apply block opacity-100;
+  }
+  .header__sub__wrapper ul {
+    @apply md:grid md:grid-cols-3 md:gap-2;
+  }
+  .header__sub__wrapper ul li {
+    @apply mx-auto;
+  }
+  .header__sub__wrapper ul li a img {
+    @apply max-h-[10rem];
+  }
+  .header__sub__bottom {
+    @apply items-center lg:grid lg:grid-cols-2;
+  }
+  .header__sub__bottom__item {
+    @apply flex items-center min-h-[8rem] max-h-[8rem]
+     justify-center md:mt-10;
+  }
+  .header__sub__bottom__item:first-child {
+    @apply bg-gray-600 mb-5 lg:mb-0;
+  }
+  .header__sub__bottom__item:last-child {
+    @apply bg-dark;
+  }
+  .header__sub__bottom__item__text {
+    @apply flex flex-col gap-4;
+  }
+  .header__sub__bottom__item__text h4 {
+    @apply text-light text-[2.5rem];
+  }
+  .header__sub__bottom__item__text h3 {
+    @apply text-light text-5xl;
+  }
   /* --------------------------BANNER---------------------------- */
   .banner {
-    @apply mx-2 translate-y-[15rem] md:mx-0 md:translate-y-[12rem];
+    @apply mx-2 translate-y-[15rem] md:mx-0 md:translate-y-[12rem] bg-light;
   }
   .banner .container {
     @apply bg-banner bg-center bg-cover h-[600px] relative flex items-center md:h-[700px];
@@ -110,8 +153,11 @@ body {
 }
 
 /* --------------------------ALWAYS---------------------------- */
+.always {
+  @apply bg-light;
+}
 .always .always__text {
-  @apply mt-5 flex flex-col gap-5;
+  @apply mt-0 flex flex-col gap-5;
 }
 .always .always__text h2 {
   @apply text-5xl tracking-widest;
