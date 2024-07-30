@@ -109,6 +109,31 @@ body{
 }
 }
 
+ /* --------------------------ALWAYS---------------------------- */
+ .always .always__text{
+    @apply mt-5 flex flex-col gap-5
+ }
+ .always .always__text h2{
+    @apply text-5xl tracking-widest ;
+ }
+ .always .always__text p{
+    @apply text-gray-500 text-lg leading-10
+ }
+ .always .always__icon{
+    @apply text-gray-800 mt-5
+ }
+ .always .always__icon ul{
+    @apply flex gap-10 justify-center md:justify-normal
+ }
+ .always .always__icon ul li{
+    @apply flex flex-col text-center
+ }
+ .always .always__icon ul li i{
+    @apply text-3xl
+ }
+.always .always__wrapper{
+    @apply md:grid md:grid-cols-2 md:gap-5 md:items-center;
+}
 
 @layer components{
     .btn{

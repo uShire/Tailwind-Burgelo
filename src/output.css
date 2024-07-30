@@ -911,6 +911,10 @@ video {
   color: rgb(255 193 57 / var(--tw-text-opacity));
 }
 
+.mt-\[22rem\] {
+  margin-top: 22rem;
+}
+
 .w-\[10rem\] {
   width: 10rem;
 }
@@ -938,4 +942,64 @@ video {
 
 body {
   font-family: Oswald, sans-serif;
+}
+
+/* --------------------------ALWAYS---------------------------- */
+
+.always .always__text {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.always .always__text h2 {
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.always .always__text p {
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.always .always__icon {
+  margin-top: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.always .always__icon ul {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .always .always__icon ul {
+    justify-content: normal;
+  }
+}
+
+.always .always__icon ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.always .always__icon ul li i {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .always .always__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 1.25rem;
+  }
 }
