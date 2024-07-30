@@ -2,142 +2,172 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.container{
-    @apply max-w-[80rem] p-2 mx-auto w-full;
+.container {
+  @apply max-w-[80rem] p-2 mx-auto w-full;
 }
 
-body{
-    @apply font-oswald;
+body {
+  @apply font-oswald;
 }
 
-@layer base{
-    .header{
-        @apply bg-light fixed w-full z-50;
-    }
-    .header .branding{
-        @apply flex items-center justify-between;
-    }
-    .header .branding h3{
-        @apply hidden font-semibold md:flex md:items-center md:gap-2 ;
-    }
-    .header .branding h3 i, .header__info h3{
-        @apply text-primary
-    }
-    .header .branding h3 p, .header__info p{
-        @apply text-dark
-    }
-    .header .header__info{
-        @apply flex flex-col items-center gap-5 mt-5; 
-    }
-    .header .header__info h3{
-        @apply  flex font-normal items-center text-sm text-primary gap-2 md:hidden;
-    }
-    .header .header__info p{
-        @apply text-dark
-    }
-    .header .toggle__menu{
-        @apply bg-primary p-2 rounded-md  md:hidden ;
-    }
-    .header .toggle__menu span{
-        @apply w-6 h-[3px] block bg-light rounded-full transition-all duration-500;
-    }
-    .header .toggle__menu span:nth-child(2){
-        @apply my-1
-    }
-    .header .toggle__menu.open span:first-child{
-        @apply translate-y-[8px] rotate-[225deg] transition-all duration-500;
-    }
-    .header .toggle__menu.open span:nth-child(2){
-        @apply opacity-0 transition-all duration-500;
-    }
-    .header .toggle__menu.open span:last-child{
-        @apply translate-y-[-6px] rotate-[-225deg] transition-all duration-500;
-    }
-    .header__nav{
-        @apply flex justify-between items-center mt-5 text-dark text-lg
+@layer base {
+  .header {
+    @apply bg-light fixed w-full z-50;
+  }
+  .header .branding {
+    @apply flex items-center justify-between;
+  }
+  .header .branding h3 {
+    @apply hidden font-semibold md:flex md:items-center md:gap-2;
+  }
+  .header .branding h3 i,
+  .header__info h3 {
+    @apply text-primary;
+  }
+  .header .branding h3 p,
+  .header__info p {
+    @apply text-dark;
+  }
+  .header .header__info {
+    @apply flex flex-col items-center gap-5 mt-5;
+  }
+  .header .header__info h3 {
+    @apply flex font-normal items-center text-sm text-primary gap-2 md:hidden;
+  }
+  .header .header__info p {
+    @apply text-dark;
+  }
+  .header .toggle__menu {
+    @apply bg-primary p-2 rounded-md  md:hidden;
+  }
+  .header .toggle__menu span {
+    @apply w-6 h-[3px] block bg-light rounded-full transition-all duration-500;
+  }
+  .header .toggle__menu span:nth-child(2) {
+    @apply my-1;
+  }
+  .header .toggle__menu.open span:first-child {
+    @apply translate-y-[8px] rotate-[225deg] transition-all duration-500;
+  }
+  .header .toggle__menu.open span:nth-child(2) {
+    @apply opacity-0 transition-all duration-500;
+  }
+  .header .toggle__menu.open span:last-child {
+    @apply translate-y-[-6px] rotate-[-225deg] transition-all duration-500;
+  }
+  .header__nav {
+    @apply flex justify-between items-center mt-5 text-dark text-lg
         md:grid md:grid-cols-[_1.5fr,_.4fr,_.4fr];
-    }
-    .header__nav .nav{
-        @apply bg-light absolute pt-10 top-[6rem] -right-[100rem] flex flex-col items-center gap-10 w-full h-screen transition-all duration-500 
+  }
+  .header__nav .nav {
+    @apply bg-light absolute pt-10 top-[6rem] -right-[100rem] flex flex-col items-center gap-10 w-full h-screen transition-all duration-500 
         md:static md:flex md:flex-row md:h-fit md:pt-0 md:gap-10 md:justify-end md:text-sm;
-    }
-    .header__nav .nav.open{
-        @apply right-0 transition-all duration-500;
-    }
-    .header__nav .nav li{
-        @apply w-[8rem] py-2 md:w-fit md:p-2;
-    }
-    .header__nav .nav li:hover{
-        @apply bg-primary rounded-sm;
-    }
-    .header__nav .nav li:hover a{
-        @apply text-light;
-    }
-    .header__nav .nav li a{
-        @apply flex items-center gap-1 justify-center;
-    }
-    .header__nav .social{
-        @apply flex gap-5 md:justify-end ;
-    }
-     .header__nav .action{
-        @apply flex gap-5 md:justify-end;
-     }
-     .header__nav ul li:hover a{
-        @apply text-primary;
-     }
+  }
+  .header__nav .nav.open {
+    @apply right-0 transition-all duration-500;
+  }
+  .header__nav .nav li {
+    @apply w-[8rem] py-2 md:w-fit md:p-2;
+  }
+  .header__nav .nav li:hover {
+    @apply bg-primary rounded-sm;
+  }
+  .header__nav .nav li:hover a {
+    @apply text-light;
+  }
+  .header__nav .nav li a {
+    @apply flex items-center gap-1 justify-center;
+  }
+  .header__nav .social {
+    @apply flex gap-5 md:justify-end;
+  }
+  .header__nav .action {
+    @apply flex gap-5 md:justify-end;
+  }
+  .header__nav ul li:hover a {
+    @apply text-primary;
+  }
 
-
- /* --------------------------BANNER---------------------------- */
- .banner{
-    @apply mx-2 translate-y-[15rem] md:mx-0 md:translate-y-[12rem]
- }
-.banner .container{
+  /* --------------------------BANNER---------------------------- */
+  .banner {
+    @apply mx-2 translate-y-[15rem] md:mx-0 md:translate-y-[12rem];
+  }
+  .banner .container {
     @apply bg-banner bg-center bg-cover h-[600px] relative flex items-center md:h-[700px];
-}
-.banner .banner__wrapper{
-    @apply md:translate-x-[5rem]
-}
-.banner .banner__text{
-    @apply  max-w-[18rem] flex flex-col gap-3 md:translate-x-[5rem] md:-translate-y-[3rem]
-}
-.banner .banner__text h1{
-    @apply text-light text-6xl tracking-widest
-}
-.banner .banner__text p {
-    @apply text-light tracking-widest
-}
-}
-
- /* --------------------------ALWAYS---------------------------- */
- .always .always__text{
-    @apply mt-5 flex flex-col gap-5
- }
- .always .always__text h2{
-    @apply text-5xl tracking-widest ;
- }
- .always .always__text p{
-    @apply text-gray-500 text-lg leading-10
- }
- .always .always__icon{
-    @apply text-gray-800 mt-5
- }
- .always .always__icon ul{
-    @apply flex gap-10 justify-center md:justify-normal
- }
- .always .always__icon ul li{
-    @apply flex flex-col text-center
- }
- .always .always__icon ul li i{
-    @apply text-3xl
- }
-.always .always__wrapper{
-    @apply md:grid md:grid-cols-2 md:gap-5 md:items-center;
+  }
+  .banner .banner__wrapper {
+    @apply md:translate-x-[5rem];
+  }
+  .banner .banner__text {
+    @apply max-w-[18rem] flex flex-col gap-3 md:translate-x-[5rem] md:-translate-y-[3rem];
+  }
+  .banner .banner__text h1 {
+    @apply text-light text-6xl tracking-widest;
+  }
+  .banner .banner__text p {
+    @apply text-light tracking-widest;
+  }
 }
 
-@layer components{
-    .btn{
-        @apply inline-block p-2 rounded-full text-center text-light
+/* --------------------------ALWAYS---------------------------- */
+.always .always__text {
+  @apply mt-5 flex flex-col gap-5;
+}
+.always .always__text h2 {
+  @apply text-5xl tracking-widest;
+}
+.always .always__text p {
+  @apply text-gray-500 text-lg leading-10;
+}
+.always .always__icon {
+  @apply text-gray-800 mt-5;
+}
+.always .always__icon ul {
+  @apply flex gap-10 justify-center md:justify-normal;
+}
+.always .always__icon ul li {
+  @apply flex flex-col text-center;
+}
+.always .always__icon ul li i {
+  @apply text-3xl;
+}
+.always .always__wrapper {
+  @apply md:grid md:grid-cols-2 md:gap-5 md:items-center;
+}
+.always .always__wrapper:last-child {
+  @apply mt-20 md:grid md:grid-cols-3 md:gap-10 md:items-center;
+}
+.always .always__wrapper:last-child .always__item:nth-child(odd) {
+  @apply md:flex md:flex-col-reverse;
+}
+.always__item img {
+  @apply w-[90%] h-[90%] mx-auto;
+}
+.always__item .always__item__desc {
+  @apply flex flex-col gap-3;
+}
+.always__item .always__item__desc h5 {
+  @apply text-xl;
+}
+.always__item .always__item__desc h5 span {
+  @apply text-primary text-4xl ml-2;
+}
+.always__item .always__item__desc h4 {
+  @apply text-3xl tracking-widest;
+}
+.always__item .always__item__desc h3 {
+  @apply text-5xl tracking-widest;
+}
+.always__item .always__item__desc p {
+  @apply text-xl text-gray-600 font-light;
+}
+.always__item .always__item__desc a {
+  @apply py-3 px-4 w-fit text-sm hover:bg-dark;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block p-2 rounded-full text-center text-light
         hover:bg-light hover:text-primary;
-    }
+  }
 }
