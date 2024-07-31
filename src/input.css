@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .container {
-  @apply max-w-[80rem] p-2 mx-auto w-full;
+  @apply max-w-[90rem] p-2 mx-auto w-full;
 }
 
 body {
@@ -209,6 +209,106 @@ body {
 }
 .always__item .always__item__desc a {
   @apply py-3 px-4 w-fit text-sm hover:bg-dark;
+}
+
+/* --------------------------OFFERS---------------------------- */
+.offers {
+  @apply py-20;
+}
+.offers .offers__wrapper {
+  @apply flex flex-col gap-5 md:grid md:grid-cols-[_1fr,_2fr,_1fr];
+}
+.offers .offers__item {
+  @apply h-[450px] text-center flex flex-col items-center justify-center;
+}
+.offers .offers__item h3 {
+  @apply text-5xl max-w-[25rem] tracking-widest text-center mx-auto
+  md:text-4xl;
+}
+.offers .offers__item p {
+  @apply tracking-widest mt-5;
+}
+.offers .offers__item:first-child {
+  @apply bg-b2g3 bg-cover bg-center bg-no-repeat md:order-2;
+}
+.offers .offers__item:nth-child(2) {
+  @apply bg-happy bg-cover bg-center bg-no-repeat;
+}
+.offers .offers__item:last-child {
+  @apply bg-off bg-cover bg-left-top bg-no-repeat md:order-3;
+}
+.offers .offers__item:nth-child(2) * {
+  @apply translate-y-[6rem];
+}
+.offers .offers__item:last-child * {
+  @apply md:translate-y-[-5rem];
+}
+
+/* --------------------------MENU NAV---------------------------- */
+.menu .menu__nav {
+  @apply max-w-[25rem] flex flex-wrap justify-center mx-auto
+  md:max-w-[unset] md:mb-10 md:gap-10;
+}
+.menu .menu__nav li {
+  @apply m-5;
+}
+.menu .menu__nav li:hover a span {
+  @apply text-primary;
+}
+.menu .menu__nav li.active a span {
+  @apply text-primary;
+}
+.menu .menu__nav li a img {
+  @apply max-w-[3rem] mx-auto
+  md:max-w-full;
+}
+.menu .menu__nav li a {
+  @apply flex flex-col text-center gap-2;
+}
+.menu .menu__nav li a span {
+  @apply text-xl;
+}
+
+/* --------------------------MENU CONTENT---------------------------- */
+.menu__content {
+  @apply hidden;
+}
+.menu__content.active {
+  @apply flex gap-10;
+}
+.menu__content__item {
+  @apply border border-gray-200 p-10 overflow-hidden relative;
+}
+.menu__content__item:hover img {
+  @apply opacity-50;
+}
+.menu__content__item img {
+  @apply max-w-[20rem] mx-auto object-cover object-center
+  md:max-w-[15rem];
+}
+.menu__content__item .menu__content__text {
+  @apply flex flex-col gap-5 translate-y-[3rem] transition-all;
+}
+.menu__content__item:hover .menu__content__text {
+  @apply translate-y-0 transition-all duration-500;
+}
+.menu__content__item .menu__content__text h4 {
+  @apply text-2xl;
+}
+.menu__content__item .menu__content__text h3 {
+  @apply text-primary text-4xl;
+}
+.menu__content__item .menu__content__text p {
+  @apply text-gray-500 translate-y-[10rem] transition-all duration-500;
+}
+.menu__content__item .menu__content__text a {
+  @apply translate-y-[10rem] transition-all duration-700;
+}
+.menu__content__item:hover .menu__content__text p {
+  @apply translate-y-0 transition-all duration-500;
+}
+.menu__content__item:hover .menu__content__text a {
+  @apply translate-y-0 transition-all duration-700;
 }
 
 @layer components {

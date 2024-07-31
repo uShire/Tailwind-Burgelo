@@ -13,6 +13,9 @@ module.exports = {
       },
       backgroundImage: {
         banner: "url('/dist/img/banner.webp')",
+        b2g3: "url('/dist/img/offers1.png')",
+        happy: "url('/dist/img/offers2.png')",
+        off: "url('/dist/img/offers3.png')",
       },
     },
   },
