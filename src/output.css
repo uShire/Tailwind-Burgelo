@@ -1383,8 +1383,15 @@ body {
 }
 
 .menu__content.active {
-  display: flex;
-  gap: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .menu__content.active {
+    display: flex;
+    gap: 2.5rem;
+  }
 }
 
 .menu__content__item {
