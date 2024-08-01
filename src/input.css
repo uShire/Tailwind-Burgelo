@@ -311,6 +311,102 @@ body {
   @apply translate-y-0 transition-all duration-700;
 }
 
+/* --------------------------CHOOSE---------------------------- */
+.choose {
+  @apply py-10;
+}
+.choose .choose__wrapper {
+  @apply grid grid-cols-1 gap-5
+  md:grid md:grid-cols-3 md:gap-0 md:items-center md:bg-gray-100;
+}
+.choose .choose__item {
+  @apply bg-gray-100 p-10 flex flex-col gap-5 relative;
+}
+.choose .choose__item img {
+  @apply md:w-[20rem];
+}
+.choose .choose__item:last-child::after {
+  @apply lg:content-[url("/dist/img/choose-vector.png")]
+  lg:absolute lg:-left-[4rem] lg:top-[3rem];
+}
+.choose .choose__item:first-child::after {
+  @apply lg:content-[url("/dist/img/choose-vector2.png")]
+  lg:absolute lg:right-0 lg:top-[3rem];
+}
+.choose .choose__item:nth-child(2) {
+  @apply flex flex-col-reverse;
+}
+.choose .choose__item:nth-child(2) h3 {
+  @apply order-1;
+}
+.choose .choose__item h3 {
+  @apply flex flex-col-reverse text-center gap-3 text-3xl tracking-widest
+  md:flex md:flex-row md:text-4xl md:text-left;
+}
+.choose .choose__item h3 i {
+  @apply text-primary text-4xl md:text-5xl;
+}
+.choose .choose__item p {
+  @apply text-lg text-gray-500 font-light text-center;
+}
+
+/* --------------------------FOOTER---------------------------- */
+.footer {
+  @apply py-10 bg-light;
+}
+.footer .footer__wrapper {
+  @apply mb-10 lg:grid lg:grid-cols-3 items-start lg:gap-10 lg:justify-center;
+}
+.footer h3 {
+  @apply text-3xl mb-5;
+}
+.footer .footer__ig {
+  @apply order-3;
+}
+.footer .footer__ig ul {
+  @apply grid grid-cols-2 lg:grid lg:grid-cols-4;
+}
+.footer .footer__sign h3 {
+  @apply mt-10 lg:mt-0;
+}
+.footer .footer__sign p {
+  @apply text-gray-400 text-xl max-w-[25rem] mb-5;
+}
+.footer .footer__input {
+  @apply flex items-center relative;
+}
+.footer .footer__input i {
+  @apply text-dark text-xl absolute right-[1rem] bottom-[.5rem] hover:text-primary
+  bg-light;
+}
+.footer .footer__input input {
+  @apply border-2 border-solid border-gray-200 w-full rounded-full p-3
+  focus:outline-none pr-10;
+}
+.footer .footer__social {
+  @apply flex gap-5 mt-5;
+}
+.footer .footer__social i {
+  @apply text-2xl;
+}
+.footer .footer__contact {
+  @apply lg:w-fit lg:mx-auto;
+}
+.footer .footer__contact h3 {
+  @apply mt-10 lg:mt-0;
+}
+.footer .footer__contact table tr td {
+  @apply h-[3.5rem] text-xl;
+}
+.footer .footer__contact table tr td:first-child {
+  @apply text-primary w-[2.5rem];
+}
+.footer .footer__contact table tr:nth-child(2) td:last-child {
+  @apply hover:text-primary w-[15rem] text-dark font-normal;
+}
+.footer .footer__contact table tr td:last-child {
+  @apply text-gray-400 font-light;
+}
 @layer components {
   .btn {
     @apply inline-block p-2 rounded-full text-center text-light

@@ -17,6 +17,9 @@ module.exports = {
         happy: "url('/dist/img/offers2.png')",
         off: "url('/dist/img/offers3.png')",
       },
+      // content: {
+      //   choose: 'url("/dist/img/choose-vector.png")',
+      // },
     },
   },
   plugins: [],
