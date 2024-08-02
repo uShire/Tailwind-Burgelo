@@ -9,7 +9,33 @@
 body {
   @apply font-oswald;
 }
-
+body.dark-mode {
+  @apply bg-gray-600 transition-all duration-700;
+}
+body.dark-mode .header {
+  @apply bg-gray-600 transition-all duration-700;
+}
+body.dark-mode .header .logo a i {
+  @apply text-light;
+}
+body.dark-mode .header h3 p {
+  @apply text-white transition-all duration-700;
+}
+body.dark-mode .banner {
+  @apply bg-gray-600 transition-all duration-700;
+}
+body.dark-mode .header__nav {
+  @apply text-white transition-all duration-700;
+}
+body.dark-mode .header__nav .nav {
+  @apply bg-gray-600 text-white;
+}
+body.dark-mode .always {
+  @apply bg-gray-600 text-white transition-all duration-700;
+}
+body.dark-mode .footer {
+  @apply bg-gray-600 transition-all duration-700;
+}
 @layer base {
   .header {
     @apply bg-light fixed w-full z-50;
@@ -133,7 +159,7 @@ body {
   }
   /* --------------------------BANNER---------------------------- */
   .banner {
-    @apply mx-2 translate-y-[15rem] md:mx-0 md:translate-y-[12rem] bg-light;
+    @apply mx-2 translate-y-[15rem]  md:translate-y-[12rem] md:mx-0 bg-light;
   }
   .banner .container {
     @apply bg-banner bg-center bg-cover h-[600px] relative flex items-center md:h-[700px];

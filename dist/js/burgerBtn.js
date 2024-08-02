@@ -34,3 +34,8 @@ function removeActiveContent() {
     menu.classList.remove("active");
   });
 }
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
