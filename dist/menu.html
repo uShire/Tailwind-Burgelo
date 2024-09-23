@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <script
+      src="https://kit.fontawesome.com/a6726e13c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Burgelo</title>
+    <link rel="icon" type="image/x-icon" href="/dist/img/favicon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+    </style>
+  </head>
+  <body class="overflow-x-hidden">
+    <section class="body__content">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <div class="branding">
+              <h3>
+                <i class="fa-solid fa-phone"></i>
+                <p>+1 (800) 312-2121</p>
+              </h3>
+              <div class="logo flex items-center gap-5">
+                <img src="./img/logo-df.svg" alt="" />
+                <a href="javascript:void(0)" onclick="myFunction()"
+                  ><i class="fa-solid fa-sun text-dark text-2xl"></i
+                ></a>
+              </div>
+
+              <div class="toggle__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <h3>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>172 14th Street, Office 503, NY</p>
+              </h3>
+            </div>
+            <div class="header__info">
+              <h3>
+                <i class="fa-solid fa-phone"></i>
+                <p>+1 (800) 312-2121</p>
+              </h3>
+              <h3>
+                <i class="fa-solid fa-location-dot"></i>
+                <p>172 14th Street, Office 503, NY</p>
+              </h3>
+            </div>
+            <div class="header__nav">
+              <ul class="nav">
+                <li>
+                  <a href="./MENU.html">MENU</a>
+                </li>
+                <li id="home">
+                  <a href="./home.html"
+                    >HOME<i class="fa-solid fa-chevron-down text-[.8rem]"></i
+                  ></a>
+                </li>
+                <li class="header__sub">
+                  <div class="header__sub__wrapper">
+                    <ul>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-1.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-2.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-3.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-4.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-5.png" alt=""
+                        /></a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"
+                          ><img src="./img/Frame-6.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                    <div class="header__sub__bottom">
+                      <div class="header__sub__bottom__item">
+                        <div class="header__sub__bottom__item__text">
+                          <h4>SPECIAL OFFER</h4>
+                          <h3>BUY 2 GET 3</h3>
+                        </div>
+                        <img src="./img/coffee.png" alt="" />
+                        <a href="javascript:void(0)" class="btn bg-dark"
+                          >ORDER NOW</a
+                        >
+                      </div>
+                      <div class="header__sub__bottom__item">
+                        <div class="header__sub__bottom__item__text">
+                          <h3>GET 25% OFF</h3>
+                          <h4>ON YOUR ORDER</h4>
+                        </div>
+                        <a href="javascript:void(0)" class="btn bg-dark"
+                          >ORDER NOW</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li><a href="javascript:void(0)">ABOUT</a></li>
+                <li><a href="javascript:void(0)">FOOD</a></li>
+                <li><a href="javascript:void(0)">DELIVERY</a></li>
+                <li><a href="javascript:void(0)">CONTACT</a></li>
+              </ul>
+              <ul class="social">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+              <ul class="action">
+                <li>
+                  <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                </li>
+                <li class="cart">
+                  <a href="javascript:void(0)"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="menu__page pt-48">
+        <div class="container">
+          <div class="menu__page__wrapper">
+            <div class="menu__page__nav__wrapper">
+              <ul class="menu__page__nav">
+                <li class="menu__page__nav__link active" id="menu__page-1">
+                  <a href="javascript:void(0)"
+                    ><img src="./img/sub-burger.png" alt="" /><span
+                      >BURGERS</span
+                    ></a
+                  >
+                </li>
+                <li class="menu__page__nav__link" id="menu__page-2">
+                  <a href="javascript:void(0)"
+                    ><img src="./img/sub-pizza.png" alt="" /><span
+                      >PIZZA</span
+                    ></a
+                  >
+                </li>
+                <li class="menu__page__nav__link" id="menu__page-3">
+                  <a href="javascript:void(0)"
+                    ><img src="./img/sub-drinks.png" alt="" /><span
+                      >DRINKS</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="menu__page__content__wrapper">
+              <div id="menu__page-1-content" class="menu__page__content active">
+                <!-- <div class="menu__page__content__item">
+                  <img
+                    src="./img/The-Texas-Squealer-Burger_01-300x300.png"
+                    alt=""
+                  />
+                  <div class="menu__page__content__text">
+                    <h4>The Texas Squealer Burger</h4>
+                    <h3>$3.88</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+                <div class="menu__page__content__item">
+                  <img src="./img/Bbq-burger_01-300x300.png" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Bbq Burger</h4>
+                    <h3>$4.00 - $5.00</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+                <div class="menu__page__content__item">
+                  <img src="./img/cheeseburger_01-300x300.png" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Cheeseburger</h4>
+                    <h3>$3.00</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div> -->
+              </div>
+              <!-- <div id="menu__page-2-content" class="menu__page__content">
+                <div class="menu__page__content__item">
+                  <img src="./img/pizza3_02-300x300.webp" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Pizza Margo</h4>
+                    <h3>$9.00 - $14.00</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+                <div class="menu__page__content__item">
+                  <img src="./img/pizza3_02-300x300.webp" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Pizza Niopale</h4>
+                    <h3>$8.00 - $11.00</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div id="menu__page-3-content" class="menu__page__content">
+                <div class="menu__page__content__item">
+                  <img src="./img/Orange-juice-300x300.webp" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Orange Juice</h4>
+                    <h3>$1.88</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+                <div class="menu__page__content__item">
+                  <img src="./img/cola_01-300x300.webp" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Cola</h4>
+                    <h3>$1.33</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+                <div class="menu__page__content__item">
+                  <img src="./img/banana-juice_01-300x300.webp" alt="" />
+                  <div class="menu__page__content__text">
+                    <h4>Banana Juice</h4>
+                    <h3>$1.50</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magnam consequatur reiciendis doloribus possimus inventore
+                      aspernatur?
+                    </p>
+                    <a href="" class="btn bg-primary"
+                      ><i class="fa-solid fa-cart-shopping"></i
+                      ><span>ADD TO CART</span></a
+                    >
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__ig">
+              <h3>INSTAGRAM</h3>
+              <ul>
+                <li>
+                  <a href=""><img src="./img/ig1.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig2.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig3.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig4.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig5.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig6.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig7.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href=""><img src="./img/ig8.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__sign">
+              <h3>SIGN UP FOR OUR UPDATE</h3>
+              <p>
+                To stay up-to-date on our promotions, discounts, sales, special
+                offers and more.
+              </p>
+              <div class="footer__input">
+                <input type="text" placeholder="Enter your email" />
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </div>
+              <ul class="footer__social">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__contact">
+              <h3>CONTACT US</h3>
+              <table>
+                <tr>
+                  <td><i class="fa-solid fa-location-dot"></i></td>
+                  <td>34 Fordham Street, New York, NY 10027</td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-phone"></i></td>
+                  <td><a href="">+1 (800) 312-2121</a></td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-clock"></i></td>
+                  <td>
+                    Monday-Friday: 9:00 am - 6:00 pm Saturday: 9:00 am - 4:00 pm
+                  </td>
+                </tr>
+                <tr>
+                  <td><i class="fa-solid fa-envelope"></i></td>
+                  <td>Send us an email</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=london eye&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              ><a href="https://embedgooglemap.xyz/">add google map in html</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 400px;
+              }
+              .gmap_iframe {
+                height: 400px !important;
+              }
+            </style>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <section class="menu__cart">
+      <div class="menu__cart__content">
+        <div class="menu__cart__items">
+          <h1>Order Cart</h1>
+        </div>
+        <div class="menu__cart__btn">
+          <a href="" class="btn-checkout">Checkout</a>
+          <a href="" class="btn-close">Close</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/burgerBtn.js"></script>
+    <script src="./js/menuMenuTabs.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

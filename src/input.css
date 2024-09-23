@@ -9,6 +9,9 @@
 body {
   @apply font-oswald;
 }
+body.scroll {
+  @apply overflow-y-hidden;
+}
 body.dark-mode {
   @apply bg-gray-600 transition-all duration-700;
 }
@@ -337,6 +340,90 @@ body.dark-mode .footer {
   @apply translate-y-0 transition-all duration-700;
 }
 
+/* --------------------------MENU PAGE NAV---------------------------- */
+.menu__page .menu__page__nav {
+  @apply max-w-[25rem] flex flex-wrap justify-center mx-auto
+  md:max-w-[unset] md:mb-10 md:gap-10;
+}
+.menu__page .menu__page__nav li {
+  @apply m-5;
+}
+.menu__page .menu__page__nav li:hover a span {
+  @apply text-primary;
+}
+.menu__page .menu__page__nav li.active a span {
+  @apply text-primary;
+}
+.menu__page .menu__page__nav li a img {
+  @apply max-w-[3rem] mx-auto
+  md:max-w-full;
+}
+.menu__page .menu__page__nav li a {
+  @apply flex flex-col text-center gap-2;
+}
+.menu__page .menu__page__nav li a span {
+  @apply text-xl;
+}
+
+/* --------------------------MENU PAGE CONTENT---------------------------- */
+.menu__page__content {
+  @apply hidden;
+}
+.menu__page__content.active {
+  @apply grid grid-cols-1 md:flex md:gap-10;
+}
+.menu__page__content__item {
+  @apply border border-gray-200 p-10;
+}
+.menu__page__content__item img {
+  @apply max-w-[20rem] mx-auto object-cover object-center
+  md:max-w-[15rem];
+}
+.menu__page__content__item .menu__page__content__text {
+  @apply flex flex-col gap-5  transition-all;
+}
+
+.menu__page__content__item .menu__page__content__text h4 {
+  @apply text-2xl;
+}
+.menu__page__content__item .menu__page__content__text h3 {
+  @apply text-primary text-4xl;
+}
+.menu__page__content__item .menu__page__content__text p {
+  @apply text-gray-500  transition-all duration-500;
+}
+.menu__page__content__item .menu__page__content__text a {
+  @apply transition-all duration-700;
+}
+.menu__page__content__item:hover .menu__page__content__text p {
+  @apply translate-y-0 transition-all duration-500;
+}
+.menu__page__content__item:hover .menu__page__content__text a {
+  @apply translate-y-0 transition-all duration-700;
+}
+
+/* --------------------------MENU CART---------------------------- */
+.menu__cart {
+  @apply absolute w-0 h-screen top-0 transition-all;
+}
+.menu__cart.open {
+  @apply bg-black w-[calc(100vw-20px)] bg-opacity-30 z-[999]
+  flex justify-end transition-all;
+}
+.menu__cart__content {
+  @apply bg-light w-[350px] h-screen z-[999] p-5
+  flex flex-col justify-between absolute -right-[500rem];
+}
+.menu__cart.open .menu__cart__content {
+  @apply flex flex-col justify-between absolute right-[0rem];
+}
+.menu__cart__content h1 {
+  @apply text-primary text-2xl;
+}
+.menu__cart__btn {
+  @apply flex justify-center gap-5;
+}
+
 /* --------------------------CHOOSE---------------------------- */
 .choose {
   @apply py-10;
@@ -433,9 +520,16 @@ body.dark-mode .footer {
 .footer .footer__contact table tr td:last-child {
   @apply text-gray-400 font-light;
 }
+
 @layer components {
   .btn {
     @apply inline-block p-2 rounded-full text-center text-light
         hover:bg-light hover:text-primary;
+  }
+  .btn-checkout {
+    @apply inline-block bg-primary text-light p-2 w-[10rem]  text-center;
+  }
+  .btn-close {
+    @apply inline-block bg-red-400 text-light p-2 w-[10rem]  text-center;
   }
 }

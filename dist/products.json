@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": " LD01 LOUNGE CHAIR",
+    "price": 200,
+    "image": "img/cheeseburger_01-300x300.png",
+    "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur reiciendis doloribus possimus inventore aspernatur?"
+  },
+  {
+    "id": 2,
+    "name": " LD02 LOUNGE CHAIR",
+    "price": 250,
+    "image": "img/cheeseburger_01-300x300.png",
+    "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur reiciendis doloribus possimus inventore aspernatur?"
+  },
+  {
+    "id": 3,
+    "name": " LD03 LOUNGE CHAIR",
+    "price": 290,
+    "image": "img/cheeseburger_01-300x300.png",
+    "desc": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam consequatur reiciendis doloribus possimus inventore aspernatur?"
+  }
+]
